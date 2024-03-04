@@ -1,0 +1,218 @@
+.nav1 {
+  height: 68px;
+  margin-top: -5px;
+}
+a {
+  text-decoration: none;
+}
+.fonts {
+  font-family: "Protest Strike", sans-serif;
+
+  margin-top: 9px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  overflow: hidden;
+}
+
+section .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px;
+}
+section .air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.herorow {
+  margin-top: 85px;
+}
+.conc {
+  margin-top: 30px;
+}
+.hero1 {
+  font-family: "Protest Revolution", sans-serif;
+  color: #f2f1eb;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero2 {
+  font-size: 1.2rem;
+  color: #d7e4c9;
+  width: 100%;
+}
+.univ {
+  background-color: rgb(0, 7, 7);
+  color: white;
+  width: 350px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 2px 2px;
+  animation: bounce 5s infinite;
+  margin-top: -15px;
+}
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about {
+  height: 500px;
+}
+
+.progress-bar {
+  transition: width 1s ease;
+}
+.skill {
+  height: 100px;
+  background-color: #050000;
+}
+.rows {
+  margin-top: 50px;
+}
+
+nav {
+  background-color: #050000;
+}
+.incon1 {
+  margin-top: 50px;
+}
+.icons {
+  font-size: 1rem;
+}
+
+i {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+i:hover {
+  transform: rotate(360deg);
+  transition: transform 2s;
+}
+.skilling {
+  padding-top: 0px;
+  border: 1px solid rgb(8, 0, 0);
+}
+.texts {
+  margin-top: 40px;
+}
+#skills {
+  background-color: #050000;
+}
+.contact {
+  height: 400px;
+}
+.teksc {
+  padding-top: 60px;
+}
+.sosmed {
+  margin-top: -20px;
+}
+
+/* button */
+.buttons {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 11px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.buttons:hover {
+  color: #ffffff;
+  transform: scale(1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.buttons::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.buttons:hover::before {
+  width: 200%;
+}
+
+.buttonan {
+  text-decoration: none;
+}
